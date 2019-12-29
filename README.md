@@ -29,7 +29,7 @@ An Object Storage service is required to create projects in Watson Studio. If yo
 
 1. From your IBM Cloud account, search for “object storage” in the IBM Cloud Catalog. Then, click the **Object Storage** tile.
 
-<img src="https://github.ibm.com/Emre-Kutlug/Getting-started-with-PySpark/blob/master/screenshots/Screen%20Shot%202019-12-23%20at%2014.43.04.png" alt="drawing" width="800" height="400"/>
+<img src="https://github.com/emrekutlug/Getting-started-with-PySpark/blob/master/screenshots/Screen%20Shot%202019-12-23%20at%2014.43.04.png" alt="drawing" width="800" height="400"/>
 
 2. Choose Lite plan and Click **Create** button.
 
