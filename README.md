@@ -39,11 +39,11 @@ An Object Storage service is required to create projects in Watson Studio. If yo
 
 1. From your IBM Cloud account, search for “watson studio” in the IBM Cloud Catalog. Then, click the Watson Studio tile.
 
-<img src="https://github.ibm.com/Emre-Kutlug/Getting-started-with-PySpark/blob/master/screenshots/Screen%20Shot%202019-12-23%20at%2014.49.52.png" alt="drawing" width="800" height="400"/>
+<img src="https://github.com/emrekutlug/Getting-started-with-PySpark/blob/master/screenshots/Screen%20Shot%202019-12-23%20at%2014.49.52.png" alt="drawing" width="800" height="400"/>
 
 2. Choose Lite plan and Click **Create** button.
 
-<img src="https://github.ibm.com/Emre-Kutlug/Getting-started-with-PySpark/blob/master/screenshots/Screen%20Shot%202019-12-23%20at%2014.50.57.png" alt="drawing" width="800" height="400"/>
+<img src="https://github.com/emrekutlug/Getting-started-with-PySpark/blob/master/screenshots/Screen%20Shot%202019-12-23%20at%2014.50.57.png" alt="drawing" width="800" height="400"/>
 
 ### Create Watson Studio project
 
@@ -53,11 +53,11 @@ An Object Storage service is required to create projects in Watson Studio. If yo
 
 3. Select **Create an empty project**.
 
-<img src="https://github.ibm.com/Emre-Kutlug/Getting-started-with-PySpark/blob/master/screenshots/Screen%20Shot%202019-12-23%20at%2014.55.39.png" alt="drawing" width="800" height="400"/>
+<img src="https://github.com/emrekutlug/Getting-started-with-PySpark/blob/master/screenshots/Screen%20Shot%202019-12-23%20at%2014.55.39.png" alt="drawing" width="800" height="400"/>
 
 4. In the New project window, name the project (for example, “Getting Started with PySpark”).
 
-<img src="https://github.ibm.com/Emre-Kutlug/Getting-started-with-PySpark/blob/master/screenshots/Screen%20Shot%202019-12-23%20at%2014.58.48.png" alt="drawing" width="800" height="400"/>
+<img src="https://github.com/emrekutlug/Getting-started-with-PySpark/blob/master/screenshots/Screen%20Shot%202019-12-23%20at%2014.58.48.png" alt="drawing" width="800" height="400"/>
 
 5. For Storage, you should select the IBM Cloud Object Storage service you created in the previous step. If it is the only storage service that you have provisioned, it is assigned automatically.
 
@@ -67,13 +67,13 @@ An Object Storage service is required to create projects in Watson Studio. If yo
 
 Next, you’ll download the data set from Github and upload it to Watson Studio.
 
-1. Navigate to the URL for the data set on Github (https://github.ibm.com/Emre-Kutlug/Getting-started-with-PySpark/tree/master/datasets), and download the file to your local desktop.
+1. Navigate to the URL for the data set on Github (https://github.com/emrekutlug/Getting-started-with-PySpark/tree/master/datasets), and download the file to your local desktop.
 
 2. In Watson Studio, select **Assets**.
 
 3. If not already open, click the **1001** data icon at the upper right of the panel to open the **Files** sub-panel. Then, click **Load**.
 
-<img src="https://github.ibm.com/Emre-Kutlug/Getting-started-with-PySpark/blob/master/screenshots/Screen%20Shot%202019-12-23%20at%2015.08.27.png" alt="drawing" width="800" height="400"/>
+<img src="https://github.com/emrekutlug/Getting-started-with-PySpark/blob/master/screenshots/Screen%20Shot%202019-12-23%20at%2015.08.27.png" alt="drawing" width="800" height="400"/>
 
 4. Drag the files to the drop area or **browse** for files to upload the data into Watson Studio.
 
@@ -85,7 +85,7 @@ Create a Jupyter Notebook and change it to use the data set that you have upload
 
 1. In the **Asset** tab, click **Add to Project**.
 
-<img src="https://github.ibm.com/Emre-Kutlug/Getting-started-with-PySpark/blob/master/screenshots/Screen%20Shot%202019-12-23%20at%2015.12.28.png" alt="drawing" width="800" height="400"/>
+<img src="https://github.com/emrekutlug/Getting-started-with-PySpark/blob/master/screenshots/Screen%20Shot%202019-12-23%20at%2015.12.28.png" alt="drawing" width="800" height="400"/>
 
 2. Select the **Notebook** asset type.
 
