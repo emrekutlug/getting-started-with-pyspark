@@ -3,7 +3,7 @@
 
 Apache Spark is a fast and powerful framework that provides an API to perform massive distributed processing over resilient sets of data. The main abstraction Spark provides is a resilient distributed dataset (RDD), which is the fundamental and backbone data type of this engine. Spark SQL is Apache Spark's module for working with structured data and MLlib is Apache Spark's scalable machine learning library. Apache Spark is written in Scala programming language. To support Python with Spark, Apache Spark community released a tool, PySpark. PySpark has similar computation speed and power as Scala. PySpark is a parallel and distributed engine for running big data applications. Using PySpark, you can work with RDDs in Python programming language.
 
-This tutorial explains how to set up and run Jupyter Notebooks from within IBM® Watson™ Studio. We will use two different datasets 5000_points.txt and people.csv that are available on [github](https://github.ibm.com/Emre-Kutlug/Getting-started-with-PySpark/tree/master/datasets). The data set has a corresponding [Getting Started with PySpark Notebook](https://github.ibm.com/Emre-Kutlug/Getting-started-with-PySpark/blob/master/getting_started_with_pyspark.ipynb).
+This tutorial explains how to set up and run Jupyter Notebooks from within IBM® Watson™ Studio. We will use two different datasets 5000_points.txt and people.csv that are available on [github](https://github.com/emrekutlug/Getting-started-with-PySpark/tree/master/datasets). The data set has a corresponding [Getting Started with PySpark Notebook](https://github.com/emrekutlug/Getting-started-with-PySpark/blob/master/getting_started_with_pyspark.ipynb).
 
 
 ## Learning objectives
@@ -33,7 +33,7 @@ An Object Storage service is required to create projects in Watson Studio. If yo
 
 2. Choose Lite plan and Click **Create** button.
 
-<img src="https://github.ibm.com/Emre-Kutlug/Getting-started-with-PySpark/blob/master/screenshots/Screen%20Shot%202019-12-23%20at%2014.46.54.png" alt="drawing" width="800" height="400"/>
+<img src="https://github.com/emrekutlug/Getting-started-with-PySpark/blob/master/screenshots/Screen%20Shot%202019-12-23%20at%2014.46.54.png" alt="drawing" width="800" height="400"/>
 
 ### Create Watson Studio service
 
