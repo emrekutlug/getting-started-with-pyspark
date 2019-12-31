@@ -144,7 +144,7 @@ Transformations and actions are two type of operations in Spark. Transformations
 
 Pair RDD is a special type of RDD to work with datasets with key/value pairs. All regular transformations work on pair RDD. In the following example, we create pair RDD with 4 tuple with two numbers. In each tuple, the first number is key and the second number is value. Then, we apply reduceByKey transformation to pair RDD. ReduceByKey tranformation combine values with the same key. Therefore, this transformation adds the values of tuples with the same key.
 
-<img src="https://github.ibm.com/Emre-Kutlug/Getting-started-with-PySpark/blob/master/screenshots/Screen%20Shot%202019-12-24%20at%2010.01.55.png" alt="drawing" width="800" height="200"/>
+<img src="https://github.com/emrekutlug/Getting-started-with-PySpark/blob/master/screenshots/Screen%20Shot%202019-12-24%20at%2010.01.55.png" alt="drawing" width="800" height="200"/>
 
 We can sort keys of tuples using sortByKey transformation like in the following example.
 
@@ -191,7 +191,7 @@ We can create PySpark DataFrame by using SparkSession's read.csv method. To do t
 
 We can use select method to select some columns of DataFrame. If we give argument to show method, it prints out rows as number of argument. In the following example it prints out 10 rows. dropDuplicates method removes the duplicate rows of a DataFrame. We can use count action to see how many rows are dropped.
 
-<img src="https://github.ibm.com/Emre-Kutlug/Getting-started-with-PySpark/blob/master/screenshots/Screen%20Shot%202019-12-24%20at%2010.56.39.png" alt="drawing" width="800" height="300"/>
+<img src="https://github.com/emrekutlug/Getting-started-with-PySpark/blob/master/screenshots/Screen%20Shot%202019-12-24%20at%2010.56.39.png" alt="drawing" width="800" height="300"/>
 
 <img src="https://github.com/emrekutlug/Getting-started-with-PySpark/blob/master/screenshots/Screen%20Shot%202019-12-24%20at%2010.57.43.png" alt="drawing" width="800" height="150"/>
 
