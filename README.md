@@ -151,7 +151,7 @@ Spark comes with an interactive python shell that has PySpark already installed.
 
 <img src="https://github.com/emrekutlug/Getting-started-with-PySpark/blob/master/screenshots/Screen%20Shot%202019-12-24%20at%2009.57.11.png" alt="drawing" width="800" height="200"/>
 
-### Use map and filter methods with Lambda function in Python
+### Using map and filter methods with Lambda function in Python
 
 Lambda functions are anonymous functions in Python. Anonymous functions do not bind to any name in runtime and it returns the functions without any name. They are usually used with map and filter methods. Lambda functions create functions to be called later. In the following example, we use lambda function with map and flter methods.
 
@@ -236,7 +236,7 @@ We can rename a column in DataFrame by using withColumnRenamed transformation.
 
 <img src="https://github.com/emrekutlug/Getting-started-with-PySpark/blob/master/screenshots/Screen%20Shot%202019-12-24%20at%2011.07.35.png" alt="drawing" width="800" height="200"/>
 
-### Using SQL queries with DataFrames by using Spark SQL module
+### Use SQL queries with DataFrames by using Spark SQL module
 
 We can also use SQL queries to achieve the same things with DataFrames. Firstly, we should create temporary table by using createOrReplaceTempView method. We should give the name of temporary table as an argument to the method. Then, we can give any query we want to execute to SparkSession's sql method as an argument. Look at the following example.
 
