@@ -1,7 +1,36 @@
+---
+# Related publishing issue: https://github.ibm.com/IBMCode/Code-Tutorials/issues/2677
 
-## Introduction
+authors:
+  - email: "Emre.Kutlug@ibm.com"
+    name: "Emre Kutlug"
+components:
+  - "jupyter"
+  - "watson-studio"
+runtimes:
+  - "python-runtime"
+services:
+  - "apache-spark"
+  - "python"
+  - "watson-studio"
+tags:
+  - "data-science"
+  - "machine-learning"
+abstract: "This tutorial covers Big Data via PySpark (a Python package for spark programming). We explain SparkContext by using map and filter methods with Lambda functions in Python. We also create RDD from object and external files, transformations and actions on RDD and pairRDD, SparkSession, and PySpark DataFrame from RDD, and external files. In addition, we use sql queries with DataFrames (by using Spark SQL module). And finally, machine learning with PySpark MLlib library."
+completed_date: "2020-01-10"
+draft: true
+excerpt: "This tutorial covers Big Data via PySpark (a Python package for spark programming). We explain SparkContext by using map and filter methods with Lambda functions in Python. We also create RDD from object and external files, transformations and actions on RDD and pair RDD, SparkSession, and PySpark DataFrame from RDD, and external files. In addition, we use sql queries with DataFrames (by using Spark SQL module). And finally, machine learning with PySpark MLlib library."
+last_updated: "2020-01-10"
+meta_description: "This tutorial covers Big Data via PySpark (a Python package for spark programming). We explain SparkContext by using map and filter methods with Lambda functions in Python. We also create RDD from object and external files, transformations and actions on RDD and pair RDD, SparkSession, and PySpark DataFrame from RDD, and external files. In addition, we use sql queries with DataFrames (by using Spark SQL module). And finally, machine learning with PySpark MLlib library."
+title: "Getting started with PySpark"
+subtitle: "Learn to use PySpark for processing structured data and machine learning modeling"
+meta_title: "Getting started with PySpark"
+primary_tag: analytics
+type: tutorial
+ignore_prod: false
+---
 
-Apache Spark is a fast and powerful framework that provides an API to perform massive distributed processing over resilient sets of data. The main abstraction Spark provides is a resilient distributed dataset (RDD), which is the fundamental and backbone data type of this engine. Spark SQL is Apache Spark's module for working with structured data and MLlib is Apache Spark's scalable machine learning library. Apache Spark is written in Scala programming language. To support Python with Spark, Apache Spark community released a tool, PySpark. PySpark has similar computation speed and power as Scala. PySpark is a parallel and distributed engine for running big data applications. Using PySpark, you can work with RDDs in Python programming language.
+Apache Spark is a fast and powerful framework that provides an API to perform massive distributed processing over resilient sets of data. The main abstraction Spark provides is a resilient distributed dataset (RDD), which is the fundamental and backbone data type of this engine. Spark SQL is Apache Spark's module for working with structured data and MLlib is Apache Spark's scalable machine learning library. Apache Spark is written in Scala programming language. To support Python with Spark, the Apache Spark community released a tool, PySpark. PySpark has similar computation speed and power as Scala. PySpark is a parallel and distributed engine for running big data applications. Using PySpark, you can work with RDDs in Python programming language.
 
 This tutorial explains how to set up and run Jupyter Notebooks from within IBM® Watson™ Studio. We will use two different datasets 5000_points.txt and people.csv that are available on [github](https://github.com/emrekutlug/Getting-started-with-PySpark/tree/master/datasets). The data set has a corresponding [Getting Started with PySpark Notebook](https://github.com/emrekutlug/Getting-started-with-PySpark/blob/master/getting_started_with_pyspark.ipynb).
 
@@ -118,11 +147,11 @@ If the notebook is not currently open, you can start it by clicking the Edit ico
 
 ### What is SparkContext?
 
-Spark comes with interactive python shell in which PySpark is already installed in it. PySpark automatically creates a SparkContext for you in the PySpark Shell. SparkContext is an entry point into the world of Spark. An entry point is a way of connecting to Spark cluster. We can use SparkContext using sc variable. In the following examples, we retrieve SparkContext version and Python version of SparkContext.
+Spark comes with an interactive python shell that has PySpark already installed. PySpark automatically creates a SparkContext for you in the PySpark Shell. SparkContext is an entry point into the world of Spark. An entry point is a way of connecting to Spark cluster. We can use SparkContext using sc variable. In the following examples, we retrieve SparkContext version and Python version of SparkContext.
 
 <img src="https://github.com/emrekutlug/Getting-started-with-PySpark/blob/master/screenshots/Screen%20Shot%202019-12-24%20at%2009.57.11.png" alt="drawing" width="800" height="200"/>
 
-### Using map and filter methods with Lambda function in Python
+### Use map and filter methods with Lambda function in Python
 
 Lambda functions are anonymous functions in Python. Anonymous functions do not bind to any name in runtime and it returns the functions without any name. They are usually used with map and filter methods. Lambda functions create functions to be called later. In the following example, we use lambda function with map and flter methods.
 
@@ -130,7 +159,7 @@ Lambda functions are anonymous functions in Python. Anonymous functions do not b
 
 ### Creating RDD from Object
 
-RDDs are data stacks distributed throughout cluster of computers. Each stack is calculated on different computers in the cluster. RDDs are the most basic data structure of Spark. We can create RDD by giving existing object like Python list to SparkContext's parallelize method. In the following example, we create a list with numbers, then we create a RDD from this list.
+RDDs are data stacks distributed throughout a cluster of computers. Each stack is calculated on different computers in the cluster. RDDs are the most basic data structure of Spark. We can create RDDs by giving existing objects like Python lists to SparkContext's parallelize method. In the following example, we create a list with numbers and create a RDD from this list.
 
 <img src="https://github.com/emrekutlug/Getting-started-with-PySpark/blob/master/screenshots/Screen%20Shot%202019-12-24%20at%2009.59.33.png" alt="drawing" width="800" height="150"/>
 
@@ -142,7 +171,7 @@ Transformations and actions are two type of operations in Spark. Transformations
 
 ### Transformations and Actions on pair RDD
 
-Pair RDD is a special type of RDD to work with datasets with key/value pairs. All regular transformations work on pair RDD. In the following example, we create pair RDD with 4 tuple with two numbers. In each tuple, the first number is key and the second number is value. Then, we apply reduceByKey transformation to pair RDD. ReduceByKey tranformation combine values with the same key. Therefore, this transformation adds the values of tuples with the same key.
+Pair RDD is a special type of RDD to work with datasets with key/value pairs. All regular transformations work on pair RDD. In the following example, we create pair RDD with 4 tuple with two numbers. In each tuple, the first number is key and the second number is value. Then, we apply reduceByKey transformation to pair RDD. ReduceByKey transformation combine values with the same key. Therefore, this transformation adds the values of tuples with the same key.
 
 <img src="https://github.com/emrekutlug/Getting-started-with-PySpark/blob/master/screenshots/Screen%20Shot%202019-12-24%20at%2010.01.55.png" alt="drawing" width="800" height="200"/>
 
@@ -150,7 +179,7 @@ We can sort keys of tuples using sortByKey transformation like in the following 
 
 <img src="https://github.com/emrekutlug/Getting-started-with-PySpark/blob/master/screenshots/Screen%20Shot%202019-12-24%20at%2010.03.27.png" alt="drawing" width="800" height="150"/>
 
-We can count number of tuples with the same key. In the following example, we see (3,2) because there are two tuple with key 3 in pairRdd.
+We can count the number of tuples with the same key. In the following example, we see (3,2) because there are two tuple with key 3 in pair RDD.
 
 <img src="https://github.com/emrekutlug/Getting-started-with-PySpark/blob/master/screenshots/Screen%20Shot%202019-12-24%20at%2010.05.10.png" alt="drawing" width="800" height="200"/>
 
@@ -183,13 +212,13 @@ You can also add 5000_points.txt dataset by applying same procedure but click in
 
 ### Create PySpark DataFrame from external file
 
-We can create PySpark DataFrame by using SparkSession's read.csv method. To do this, we should give path of csv file as an argument to the method. Show action prints first 20 rows of DataFrame. Count action prints number of rows in DataFrame. Columns attribute prints the list of columns in DataFrame. PrintSchema action prints the types of columns in the Dataframe and it gives information about whether there is null values in columns or not.
+We can create PySpark DataFrame by using SparkSession's read.csv method. To do this, we should give path of csv file as an argument to the method. Show action prints first 20 rows of DataFrame. Count action prints number of rows in DataFrame. Columns attribute prints the list of columns in DataFrame. PrintSchema action prints the types of columns in the DataFrame and tells you if there are null values in columns.
 
 <img src="https://github.com/emrekutlug/Getting-started-with-PySpark/blob/master/screenshots/Screen%20Shot%202019-12-24%20at%2010.54.13.png" alt="drawing" width="800" height="400"/>
 
 <img src="https://github.com/emrekutlug/Getting-started-with-PySpark/blob/master/screenshots/Screen%20Shot%202019-12-24%20at%2010.55.17.png" alt="drawing" width="800" height="300"/>
 
-We can use select method to select some columns of DataFrame. If we give argument to show method, it prints out rows as number of argument. In the following example it prints out 10 rows. dropDuplicates method removes the duplicate rows of a DataFrame. We can use count action to see how many rows are dropped.
+We can use select method to select some columns of DataFrame. If we give an argument to show method, it prints out rows as the number of arguments. In the following example, it prints out 10 rows. dropDuplicates method removes the duplicate rows of a DataFrame. We can use count action to see how many rows are dropped.
 
 <img src="https://github.com/emrekutlug/Getting-started-with-PySpark/blob/master/screenshots/Screen%20Shot%202019-12-24%20at%2010.56.39.png" alt="drawing" width="800" height="300"/>
 
@@ -215,7 +244,7 @@ We can also use SQL queries to achieve the same things with DataFrames. Firstly,
 
 ### Create RDD from external file
 
-The second and mostly used way to create RDD is from external dataset. To do this, we can use SparkContext's textFile method. In the following example, we use 5000_points.txt dataset. To do this, we use path to dataset as an argument to textFile method.
+The second and most common way to create RDDs is from an external data set. To do this, we can use SparkContext's textFile method. In the following example, we use 5000_points.txt dataset. To do this, we use path to dataset as an argument to textFile method.
 
 <img src="https://github.com/emrekutlug/Getting-started-with-PySpark/blob/master/screenshots/Screen%20Shot%202019-12-24%20at%2011.09.36.png" alt="drawing" width="800" height="200"/>
 
@@ -227,7 +256,7 @@ We can also further transform the splitted RDD to create a list of integers for 
 
 ### Machine Learning with PySpark MLlib
 
-PySpark MLlib is the Apache Spark's scalable machine learning library in Python consisting of common learning algorithms and utilities. We use Kmeans algorithm of MLlib library to cluster data in 5000_points.txt dataset. First, we should define error method to calculate distance from every point to center of its clusters which the points belong to.
+PySpark MLlib is the Apache Spark's scalable machine learning library in Python consisting of common learning algorithms and utilities. We use K-means algorithm of MLlib library to cluster data in 5000_points.txt dataset. First, we should define error method to calculate distance from every point to center of its clusters which the points belong to.
 
 <img src="https://github.com/emrekutlug/Getting-started-with-PySpark/blob/master/screenshots/Screen%20Shot%202019-12-24%20at%2011.41.34.png" alt="drawing" width="800" height="75"/>
 
@@ -239,8 +268,8 @@ We can again use SparkSession's createDataFrame method to create DataFrame from 
 
 <img src="https://github.com/emrekutlug/Getting-started-with-PySpark/blob/master/screenshots/Screen%20Shot%202019-12-24%20at%2011.45.38.png" alt="drawing" width="800" height="400"/>
 
-### Conclusion
+## Summary
 
-This tutorial discusses Big Data via PySpark, a Python package for spark programming. In this tutorial, I explained SparkContext, using map and filter methods with Lambda functions in Python, creating rdd from object and external file, transformations and actions on rdd and pair rdd, SparkSession, creating PySpark Dataframe from rdd and external file, using sql queries with Dataframes by using Spark SQL module and finally, machine learning with PySpark MLlib library.
+This tutorial covered Big Data via PySpark (a Python package for spark programming). We explained SparkContext by using map and filter methods with Lambda functions in Python. We also created RDD from object and external files, transformations and actions on RDD and pair RDD, SparkSession, and PySpark DataFrame from RDD, and external files. Next, we used sql queries with DataFrames (by using Spark SQL module). And finally, machine learning with PySpark MLlib library.
 
 
