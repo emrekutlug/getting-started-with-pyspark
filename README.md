@@ -1,34 +1,4 @@
----
-# Related publishing issue: https://github.ibm.com/IBMCode/Code-Tutorials/issues/2677
-
-authors:
-  - email: "Emre.Kutlug@ibm.com"
-    name: "Emre Kutlug"
-components:
-  - "jupyter"
-  - "watson-studio"
-runtimes:
-  - "python-runtime"
-services:
-  - "apache-spark"
-  - "python"
-  - "watson-studio"
-tags:
-  - "data-science"
-  - "machine-learning"
-abstract: "This tutorial covers Big Data via PySpark (a Python package for spark programming). We explain SparkContext by using map and filter methods with Lambda functions in Python. We also create RDD from object and external files, transformations and actions on RDD and pairRDD, SparkSession, and PySpark DataFrame from RDD, and external files. In addition, we use sql queries with DataFrames (by using Spark SQL module). And finally, machine learning with PySpark MLlib library."
-completed_date: "2020-01-10"
-draft: true
-excerpt: "This tutorial covers Big Data via PySpark (a Python package for spark programming). We explain SparkContext by using map and filter methods with Lambda functions in Python. We also create RDD from object and external files, transformations and actions on RDD and pair RDD, SparkSession, and PySpark DataFrame from RDD, and external files. In addition, we use sql queries with DataFrames (by using Spark SQL module). And finally, machine learning with PySpark MLlib library."
-last_updated: "2020-01-10"
-meta_description: "This tutorial covers Big Data via PySpark (a Python package for spark programming). We explain SparkContext by using map and filter methods with Lambda functions in Python. We also create RDD from object and external files, transformations and actions on RDD and pair RDD, SparkSession, and PySpark DataFrame from RDD, and external files. In addition, we use sql queries with DataFrames (by using Spark SQL module). And finally, machine learning with PySpark MLlib library."
-title: "Getting started with PySpark"
-subtitle: "Learn to use PySpark for processing structured data and machine learning modeling"
-meta_title: "Getting started with PySpark"
-primary_tag: analytics
-type: tutorial
-ignore_prod: false
----
+## Introduction
 
 Apache Spark is a fast and powerful framework that provides an API to perform massive distributed processing over resilient sets of data. The main abstraction Spark provides is a resilient distributed dataset (RDD), which is the fundamental and backbone data type of this engine. Spark SQL is Apache Spark's module for working with structured data and MLlib is Apache Spark's scalable machine learning library. Apache Spark is written in Scala programming language. To support Python with Spark, the Apache Spark community released a tool, PySpark. PySpark has similar computation speed and power as Scala. PySpark is a parallel and distributed engine for running big data applications. Using PySpark, you can work with RDDs in Python programming language.
 
